@@ -1,0 +1,13 @@
+``` yaml
+kind: PersistentVolumeClaim
+apiVersion: v1
+metadata:
+ name: template-workflow-pvc
+spec:
+ accessModes:
+  - ReadWriteOnce
+ resources:
+  requests:
+   storage: 100Gi
+ storageClassName: csi-rbd-sc
+```
