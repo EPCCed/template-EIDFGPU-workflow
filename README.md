@@ -15,3 +15,5 @@ However, if the Docker container also needs to be developed then GitHub actions 
 This repo contains a GitHub action to automatically build and publish a Docker image given any detected changes to the Dockerfile in the code/docker folder.
 
 The repo also contains an example k8s job specification file that downloads and runs the python code held within the repo.
+
+You will need to create two [GitHub secrets](https://docs.github.com/en/actions/security-guides/using-secrets-in-github-actions) to securely provide your Docker Hub username and access token.
