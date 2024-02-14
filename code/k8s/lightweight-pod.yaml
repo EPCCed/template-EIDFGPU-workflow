@@ -3,6 +3,8 @@ apiVersion: v1
 kind: Pod
 metadata:
  name: lightweight-pod
+ labels:
+  kueue.x-k8s.io/queue-name: <USER_KUEUE_NAME>
 spec:
  containers:
  - name: data-loader
