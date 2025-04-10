@@ -1,8 +1,8 @@
-``` yaml
+---
 apiVersion: v1
 kind: Pod
 metadata:
- name: lightweight-pod
+ generateName: lightweight-pod-
  labels:
   kueue.x-k8s.io/queue-name: <USER_KUEUE_NAME>
 spec:
@@ -24,4 +24,3 @@ spec:
  - name: volume
    persistentVolumeClaim:
     claimName: template-workflow-pvc
-```

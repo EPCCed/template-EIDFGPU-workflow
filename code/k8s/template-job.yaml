@@ -1,8 +1,7 @@
-```yaml
 apiVersion: batch/v1
 kind: Job
 metadata:
- name: template-workflow-job
+ generateName: template-workflow-job-
  labels:
   kueue.x-k8s.io/queue-name: <USER_KUEUE_NAME>spec:
  completions: 1
@@ -48,4 +47,3 @@ metadata:
    - name: github-code
      emptyDir:
       sizeLimit: 1Gi
-```
